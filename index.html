@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://kit.fontawesome.com/19e479161d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body" class="bg-gray-200">
+    <section class="max-w-screen-lg min-h-screen mx-auto p-6 ">
+        <div class="navbar">
+            <div class="flex-1 text-black ">
+                <img src="./assets/logo.png" alt="">
+              <a class="btn btn-ghost text-xl text-black">Dev <span class="font-bold">Board</span></a>
+            </div>
+            <div class="flex-none">
+                <fieldset class="fieldset p-4">
+                    <label class="fieldset-label text-black font-bold">
+                      <input type="checkbox" checked="checked" class="checkbox" />
+                      23
+                    </label>
+                  </fieldset>
+              <div id="themeButton" class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS Navbar component"
+                      src="./assets/theme-btn.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section id="addTaskBtn"  class="mt-4 p-5 ">
+            <div>
+                <div class="grid grid-cols-4 justify-center items-center gap-4 text-2xl text-black">
+                    <div class="items-center gap-2 bg-gray-400 p-3 ">
+                        <fieldset class="fieldset p-2">
+                            <label class="fieldset-label text-black font-bold flex">
+                              <input type="checkbox" checked="checked" class="checkbox" />
+                              <div>
+                                <h2 class="text-xl font-semibold">Task Assigned</h2>
+                                <p class="text-2xl font-bold">5</p>
+                            </div>
+                            </label>
+                          </fieldset>                       
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="flex items-center gap-2 bg-sky-500 p-3">
+                        <img src="./assets/board.png" alt="Board">
+                        <div>
+                            <h2 class="text-2xl font-semibold">Discover Something <br> New Today!</h2>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class=" gap-2 p-3 bg-gray-400">
+                        <img src="./assets/calender.png" alt="Calendar">
+                        <div>
+                            <!-- <h2 class="">Wed, Jul 28 2025</h2> -->
+                            <p class="calendar-date text-xl font-semibold p-4"></p>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class=" grid-rows-3 border border-stone-400 p-3 ">
+                        <h2 class="text-xl font-semibold gap-2"><i class="fa-solid fa-clock-rotate-left"></i>Activity Log</h2>
+                        <button class="bg-blue-500 text-white hover:bg-blue-600">Clear History</button>
+                    </div>                                      
+                </div>               
+        </section>
+
+        <section class="mt-4 p-5">
+            <div class=" flex grid grid-cols-3">
+                <div class="card card-border text-2xl text-black ">
+                    <div class="card-body">
+                      <h2 class="card-title">ShopEase</h2>
+                      <h1>Fix Mobile Button Issue </h1>
+                      <p class="overflow-hidden">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                      <div class="card-actions flex">
+                        <h2>Deadline</h2>
+                        <p>21 March 2025</p>
+                        <button class="btn btn-primary">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-2 -->
+                  <div class="card card-border text-2xl text-black">
+                    <div class="card-body">
+                      <h2 class="card-title">CloudSync</h2>
+                      <h1>Add Dark Mode </h1>
+                      <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                      <div class="card-actions">
+                        <h2>Deadline</h2>
+                        <p>21 March 2025</p>
+                        <button class="btn btn-primary">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-3 -->
+                  <div class="card card-border text-2xl text-black">
+                    <div class="card-body">
+                      <h2 class="card-title">SwiftPay</h2>
+                      <h1>Optimize  Home page</h1>
+                      <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                      <div class="card-actions">
+                        <h2>Deadline</h2>
+                        <p>21 March 2025</p>
+                        <button class="btn btn-primary">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card-4 -->
+                  <div class="card card-border text-2xl text-black">
+                    <div class="card-body">
+                      <h2 class="card-title">Meta</h2>
+                      <h1>Add new emoji 🤲 </h1>
+                      <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                      <div class="card-actions">
+                        <h2>Deadline</h2>
+                        <p>21 March 2025</p>
+                        <button class="btn btn-primary">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- card-5 -->
+                  <div class="card card-border text-2xl text-black">
+                    <div class="card-body">
+                      <h2 class="card-title">Google LLC</h2>
+                      <h1>Integrate OpenAI API  </h1>
+                      <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                      <div class="card-actions">
+                        <h2>Deadline</h2>
+                        <p>21 March 2025</p>
+                        <button class="btn btn-primary">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- card-6 -->
+                  <div class="card card-border text-2xl text-black">
+                    <div class="card-body">
+                      <h2 class="card-title">ShopEase</h2>
+                      <h1>Fix Mobile Button Issue </h1>
+                      <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                      <div class="card-actions flex justify-end items-center">
+                        <h2>Deadline</h2>
+                        <p>21 March 2025</p>
+                        <div class="">
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
