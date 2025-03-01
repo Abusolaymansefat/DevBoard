@@ -3,7 +3,7 @@ document.querySelectorAll('.btn-primary').forEach(button => {
         this.innerText = "✔ Completed";
         this.classList.add('bg-green-500', 'text-white'); 
         this.disabled = true; 
-        alert("Activity Log Cleared! ✅");
+        alert("Board updated succesfully ✅");
     });
 });
 
@@ -27,46 +27,13 @@ document.getElementById("themeButton").addEventListener("click", function () {
 //     }
 // });
 
-document
-.getElementById('add-money')
-.addEventListener('click', function(event){
-    event.preventDefault();
-    const amount = getInputValueById('add-money');
-    const pin = getInputValueById('pin');
-    const acount = document.getElementById('account-number').value;
-    const mainBalance = getInnerTextById('main-balance')
-    if(acount.length === 11){
-        if(pin === 1234){
-            const sum = mainBalance + amount;
-            // document.getElementById('main-balance').innerText = sum;
-            setInnerTextByIdAndValue('main-balance', sum);
-
-            const container = document.getElementById('transection-cont')
-            const p = document.createElement('p');
-            p.innerText =`
-            added ${amount} from ${acount} account
-            `
-            container.appendChild(p)
-        }
-        else{
-            console.log('pin thik nai')
-        }
-    }
-    else{
-        console.log('account numbet thik nai')
-    }
-})
-
-
-
 
 // document.addEventListener("click", function (event) {
 //     if (event.target.id === "myButton") {
 //         alert("Button Clicked!");
 //     }
 // });
-
-
+;
 
 //** 
 document.addEventListener("DOMContentLoaded", function () {
