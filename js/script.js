@@ -16,10 +16,7 @@ document.getElementById("themeButton").addEventListener("click", function () {
         body.classList.remove("bg-blue-500", "text-white");
         body.classList.add("bg-white"); 
     }
-    else {
-        body.classList.remove("bg-red-500", "text-white");
-        body.classList.add("bg-white"); 
-    }
+    
 });
         document.getElementById("new-today").addEventListener("click", function() {
             window.location.href = './main.html'
