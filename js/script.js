@@ -21,14 +21,6 @@ document.getElementById("themeButton").addEventListener("click", function () {
             window.location.href = './main.html'
         });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const dateElement = document.querySelector('.calendar-date'); 
-//     if (dateElement) {
-//         const today = new Date();
-//         const formattedDate = today.toDateString();
-//         dateElement.innerText = formattedDate;
-//     }
-// });
 
 
 document.addEventListener("click", function (event) {
@@ -47,5 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
         dateElement.innerText = formattedDate; 
     }
 });
+
+
+
+
 
 
