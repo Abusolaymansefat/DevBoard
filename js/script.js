@@ -17,6 +17,9 @@ document.getElementById("themeButton").addEventListener("click", function () {
         body.classList.add("bg-white"); 
     }
 });
+        document.getElementById("new-today").addEventListener("click", function() {
+            window.location.href = './main.html'
+        });
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const dateElement = document.querySelector('.calendar-date'); 
@@ -28,11 +31,11 @@ document.getElementById("themeButton").addEventListener("click", function () {
 // });
 
 
-// document.addEventListener("click", function (event) {
-//     if (event.target.id === "myButton") {
-//         alert("Button Clicked!");
-//     }
-// });
+document.addEventListener("click", function (event) {
+    if (event.target.id === "myButton") {
+        alert("Button Clicked!");
+    }
+});
 ;
 
 //** 
